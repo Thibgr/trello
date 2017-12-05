@@ -1,0 +1,294 @@
+/* General */
+
+.shadow{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .05);
+}
+
+.r-5{
+    border-radius: 5px;
+}
+
+i{
+    color: #3c75dd;
+}
+
+body{
+    font-family: Arial;
+    padding:0px;
+    background-color: whitesmoke;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+main>section::-webkit-scrollbar-track
+{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .05);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+main>section::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: whitesmoke;
+}
+
+main>section::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #3c75dd;
+}
+
+/* NAV */
+
+nav{
+    margin: 0px;
+    padding: 0px 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: calc(100vw - 40px);
+}
+
+nav .img-logo{
+    width: 100px;
+    height: auto;
+}
+
+nav .menu-left, .menu-left>div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav .menu-left div input{
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+nav .menu-left div input::placeholder{
+    color: #000;
+    font-size: 0.8rem;
+}
+
+nav .menu-left div:first-of-type{
+    border-right: 1px lightgrey solid;
+}
+
+nav .menu-left p{
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+nav .menu-left i, .menu-right i{
+    margin: 20px;
+}
+
+/* right */
+
+nav .menu-right>div:first-of-type{
+    border-right: 1px lightgrey solid;
+    height: 100%;
+}
+
+nav .menu-right>div:first-of-type p{
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+nav .menu-right, .menu-right>div{
+    display: flex;
+    align-items: center;
+}
+
+
+nav .menu-right #p-picture{
+    width: 35px; height: 35px;
+    background-color: mediumseagreen;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    margin: 0px 20px;
+}
+
+nav .menu-right #p-button{
+    border-right: 1px lightgrey solid;
+    height: 100%;
+}
+
+nav .menu-right #p-button #p-name{
+    margin-right: 20px;
+}
+
+nav .menu-right{
+    height: 100%;
+}
+
+nav p {
+    cursor: pointer;
+}
+
+/* MAIN */
+
+body>main{
+    margin-top: 20px;
+    padding: 0px 20px;
+    height: calc(100vh - 180px);
+}
+    /* header */
+
+body main>header{
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+body main>header, main>header>div{
+    display: flex;
+}
+
+main>section{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: (100vw - 40px);
+    height: 100%;
+}
+
+body main>header>div>i{
+    margin-right: 20px;
+}
+
+body main>header h2{
+    font-size: 1.2rem;
+}
+
+body main>header button {
+    background: none;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    font: inherit;
+    line-height: normal;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+body main>header button:hover {
+    background-color: rgba(60, 117, 221, 0.8);
+
+    -moz-transition: all 0.1s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.1s ease-in;
+    /* Opera */
+    -o-transition: all 0.1s ease-in;
+    /* Standard */
+    transition: all 0.1s ease-in;
+}
+body main>header button:hover i{
+    color: white;
+
+    -moz-transition: all 0.1s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.1s ease-in;
+    /* Opera */
+    -o-transition: all 0.1s ease-in;
+    /* Standard */
+    transition: all 0.1s ease-in;
+}
+
+
+/* cards */
+
+main .cards {
+    width: 375px;
+    min-width: 375px;
+    margin-right: 20px;
+    height: 100%;
+}
+
+main .cards .cards-contain{
+    background-color: white;
+    padding: 20px;
+}
+
+main .cards>div header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .cards>div header span{
+    content: " ";
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #3c75dd;
+    display: block;
+    margin: 4px;
+}
+
+main .cards>div header .cards-param{
+    cursor: pointer;
+}
+
+main .cards>div main .tickets{
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+main .cards>div main .tickets>p:last-of-type{
+    margin-bottom: 20px;
+}
+
+main .cards>div main {
+    overflow-y: auto;
+    max-height: calc(100vh - 320px);
+}
+
+main .cards a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    display: block;
+}
+
+main .cards .add-list{
+    background-color: rgba(0, 0, 0, 0.1);
+    max-height: 100%;
+    padding: 10px 20px 15px 20px;
+}
+
+main .cards .add-list:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+main .cards .tickets .tickets-options{
+    display: flex;
+    align-items: flex-end;
+    color: #3c75dd;
+    margin-right: 20px;
+}
+
+main .cards .tickets .tickets-options i{
+    margin-right: 5px;
+}
+
+main .cards .tickets .tickets-options span {
+font-size: 0.8rem;
+}
+
+main .cards .tickets p>span{
+    color: mediumseagreen;
+}
+
